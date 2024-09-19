@@ -9,9 +9,9 @@ print(img.shape)
 # verifica se a imagem foi carregada corretamente 
 if img is not None:
     print('Imagem carregada com sucesso.')
-    #cv2.imshow('Imagem', img)   # mostra a imagem original em um janela
-    #cv2.waitKey(0)              # aguarda qualquer tecla ser pressionada pra continuar
-    #cv2.destroyAllWindows()     # fecha todas as janelas aberta do opencv
+    cv2.imshow('Imagem', img)   # mostra a imagem original em um janela
+    cv2.waitKey(0)              # aguarda qualquer tecla ser pressionada pra continuar
+    cv2.destroyAllWindows()     # fecha todas as janelas aberta do opencv
 else:
     print('Erro ao carregar a imagem.') # exibe mensagem de erro se a imagem não for carregada.
 
@@ -23,9 +23,9 @@ img2_cinza = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY) #converte a imagem dimension
 # verifica se a conversão para escala de cinzas foi realizada com sucesso. 
 if img2_cinza is not None:
     print('Imagem em escala de cinzas carregada com sucesso.')
-    #cv2.imshow('Imagem', img2_cinza)    # mostra a imagem oem escala de cinzas em um janela
-    #cv2.waitKey(0)                      # aguarda qualquer tecla ser pressionada pra continuar
-    #cv2.destroyAllWindows()             # fecha todas as janelas aberta do opencv
+    cv2.imshow('Imagem', img2_cinza)    # mostra a imagem oem escala de cinzas em um janela
+    cv2.waitKey(0)                      # aguarda qualquer tecla ser pressionada pra continuar
+    cv2.destroyAllWindows()             # fecha todas as janelas aberta do opencv
 else:
     print('Erro ao carregar imagem em escala de cinza.')    # exibe mensagem de erro se a imagem não for carregada.
 
